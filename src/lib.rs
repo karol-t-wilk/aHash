@@ -12,6 +12,7 @@
 //! Because aHash does not have a fixed standard for its output, it is able to improve over time.
 //! But this also means that different computers or computers using different versions of ahash may observe different
 //! hash values for the same input.
+#![feature(build_hasher_simple_hash_one)]
 #![cfg_attr(
     all(
         feature = "std",
